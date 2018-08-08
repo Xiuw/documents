@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Technical Document Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!--
+		- Main element with id="main-doc"
+		- #main-doc with several section with class=main-section
+		- Each .main-section have header element, should have min. of 5 .main-section
+		- Each .main-section should have id corresponds with the text of each header, use underscore instead of space
+		- .main-section should contain at least 10 P element
+		- .main-section should contain at least 5 code element total
+		- .main-section should contain at least 5 li items total not each
+		- nav element with id="navbar" 
+		- nav element should contain one header(describing the topic of the technical documents)
+		- nav bar should contain link(a) with class nav-link, should be one for every element ith the class main-section, nav link should link to the corresponding main-section
+		-On regular sized devices, nav should show on the left side of the screen
+		- Use at least one media query
+
+
+	-->	
+
+	<nav id="navbar">
+		<header>ES6 Documentation</header>
+			<ul>
+				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
+
+				<a class="nav-link" href="#JavaScript_let" rel="internal"><li>JavaScript let</li></a>
+
+				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
+
+				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
+
+				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
+
+			</ul>
+
+	</nav>	
+	<main id="main-doc">
+		
+
+			<section class="main-section" id="What_is_ECMAScript_6">
+				<header>
+					<h1>What is ECMAScript 6 ?</h1>
+				</header>
+			<p>ECMAScript is also known as ES6 and ECMAScript 2015</p>	
+			<p>Some people like to call it Javascript 6.</p>
+			
+			<p>This technical documentation will introduce some of the new features in ES6.</p>
+
+			</section>
+
+			<section class="main-section" id="JavaScript_let">
+				<header>
+					<h1>JavaScript let</h1>
+				</header>
+		
+				<p>The <em>let</em> statement allows you to declare a variable with block scope.</p>
+
+				<code>
+					var x = 10;
+					//here x is 10
+					{
+						let x = 2;
+							//here x is 2
+					}
+					//here x  is 10
+				</code>	
+					
+			</section>
+
+			<section class="main-section" id="Javascript Const">
+				<header>
+					<h1>ES6 Documentation</h1>
+				</header>
+
+				<p>The const statement allows you to declare a constant (a JavaScript variable with a constant value).</p>
+
+				<p>Constants are similar to let variables, except that the value cannot be changed.</p>
+
+				<
+			</section>
+
+			<section class="main-section">
+				<header>
+					<h1>ES6 Documentation</h1>
+				</header>
+			</section>
+
+			<section class="main-section">
+				<header>
+					<h1>ES6 Documentation</h1>
+				</header>
+			</section>
+			
+
+
+
+	
+
+	</main>	
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
