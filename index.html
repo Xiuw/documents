@@ -23,29 +23,44 @@
 
 
 	-->	
-
+	<div class="container">
+	<div class="firstSet">	
 	<nav id="navbar">
-		<header>ES6 Documentation</header>
+		<header class="navHeader">ES6 Documentation</header>
 			<ul>
 				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
 
 				<a class="nav-link" href="#JavaScript_let" rel="internal"><li>JavaScript let</li></a>
 
-				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
+				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>Javascript Const</li></a>
 
-				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
+				<a class="nav-link" href="#Default_Parameter_Values" rel="internal"><li>Default Parameter Values</li></a>
 
-				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
+				<a class="nav-link" href="#Array.find()" rel="internal"><li>Array.find()</li></a>
 
+				<a class="nav-link" href="#Array.findIndex()" rel="internal"><li>Array.findIndex()</li></a>
+
+				<a class="nav-link" href="#New_Number_Properties" rel="internal"><li>New Number Properties</li></a>
+
+
+				<a class="nav-link" href="#New_Global_Methods" rel="internal"><li>New Global Method</li></a>
+
+				<a class="nav-link" href="#Arrow_Functions" rel="internal"><li>Arrow Functions</li></a>
+
+				<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
 			</ul>
 
-	</nav>	
+	</nav>
+	</div>	
+
+	<div class="secondSet">
+
 	<main id="main-doc">
 		
 
 			<section class="main-section" id="What_is_ECMAScript_6">
 				<header>
-					<h1>What is ECMAScript 6 ?</h1>
+					<h1>What is ECMAScript 6</h1>
 				</header>
 			<p>ECMAScript is also known as ES6 and ECMAScript 2015</p>	
 			<p>Some people like to call it Javascript 6.</p>
@@ -59,17 +74,19 @@
 					<h1>JavaScript let</h1>
 				</header>
 		
-				<p>The <em>let</em> statement allows you to declare a variable with block scope.</p>
+				<p>The <b>let</b> statement allows you to declare a variable with block scope.</p>
 
-				<code>
-					var x = 10;
-					//here x is 10
-					{
-						let x = 2;
-							//here x is 2
-					}
-					//here x  is 10
-				</code>	
+	<code>
+	<h3>Example:</h3>
+	var x = 10;
+	//here x is 10
+	{
+		let x = 2;
+			//here x is 2
+	}
+	//here x  is 10
+
+	</code>	
 					
 			</section>
 
@@ -78,31 +95,241 @@
 					<h1>ES6 Documentation</h1>
 				</header>
 
-				<p>The const statement allows you to declare a constant (a JavaScript variable with a constant value).</p>
+				<p>The <b>const</b> statement allows you to declare a constant (a JavaScript variable with a constant value).</p>
 
 				<p>Constants are similar to let variables, except that the value cannot be changed.</p>
+<code>
+var x = 10;
+	// Here x is 10
+	{ 
+		const x = 2;
+		// Here x is 2
+	}
+	// Here x is 10
 
-				<
+
+</code>	
+
+
 			</section>
 
-			<section class="main-section">
+			<section class="main-section" id="Default_Parameter_Values">
 				<header>
-					<h1>ES6 Documentation</h1>
+					<h1>Default Parameter Values</h1>
 				</header>
+				<p>ES6 allows function parameters to have default values.</p>
+
+	<code>
+	function myFunction(x, y = 10) {
+    // y is 10 if not passed or undefined
+    return x + y;
+	}
+	myFunction(5); // will return 15
+
+	</code>			
 			</section>
 
-			<section class="main-section">
+
+
+			<section class="main-section" id="Array.find()">
 				<header>
-					<h1>ES6 Documentation</h1>
+					<h1>Array.find()</h1>
 				</header>
+				<p>The find() method returns the value of the first array element that passes a test function.</p>
+
+				<p>This example finds (returns the value of ) the first element that is larger than 18:</p>
+
+	<code>
+	var numbers = [4, 9, 16, 25, 29];
+	var first = numbers.find(myFunction);
+
+	function myFunction(value, index, array) {
+    return value > 18;
+	}
+
+	</code>	
+				<p>Note that the function takes 3 arguments:</p>
+				<ul>
+					<li>The item value</li>
+					<li>The item index</li>
+					<li>The array itself</li>
+				</ul>
+
 			</section>
-			
 
 
 
+			<section class="main-section" id="Array.findIndex()">
+				<header>
+					<h1>Array.findIndex()</h1>
+				</header>
+				<p>The findIndex() method returns the index of the first array element that passes a test function.</p>
+				<p>This example finds the index of the first element that is larger than 18:</p>
+
+	<code>
+	var numbers = [4, 9, 16, 25, 29];
+	var first = numbers.findIndex(myFunction);
+
+	function myFunction(value, index, array) {
+    return value > 18;
+	}
+
+	</code>
+
+				<p>Note that the function takes 3 arguments:</p>
+				<ul>
+					<li>The item value</li>
+					<li>The item index</li>
+					<li>The array itself</li>
+
+				</ul>
+
+			</section>
+
+
+			<section class="main-section" id="New_Number_Properties">
+				<header>
+					<h1>New Number Properties</h1>
+				</header>
+				<p>ES6 added the following properties to the Number object:</p>
+				<ul>
+					<li>EPSILON</li>
+					<li>MIN_SAFE_INTEGER</li>
+					<li>MAX_SAFE_INTEGER</li>
+				</ul>
+<code>
+var x = Number.EPSILON;
+
+</code>
 	
+<code>
+var x = Number.MIN_SAFE_INTEGER;
 
+</code>	
+<code>
+var x = Number.MAX_SAFE_INTEGER;
+
+</code>		
+
+			</section>
+
+
+
+			<section class="main-section" id="New_Number_Methods">
+				<header>
+					<h1>New Number Methods</h1>
+				</header>
+				<p>ES6 added 2 new methods to the Number object:</p>
+				<ul>
+					<li>Number.isInteger()</li>
+					<li>Number.isSafeInteger()</li>
+				</ul>
+				<hr>
+				<h3>The Number.isInteger() Method</h3>
+				<p>The <b>Number.isInteger()</b> method returns true if the argument is an integer.</p>
+<code>
+Number.isInteger(10);        // returns true
+
+Number.isInteger(10.5);      // returns false
+
+</code>		<hr>
+			<h3>The Number.isSafeInteger() Method</h3>
+			<p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
+			<p>The <b>Number.isSafeInteger()</b> method returns true if the argument is a safe integer.</p>
+<code>
+Number.isSafeInteger(10);    // returns true
+
+Number.isSafeInteger(12345678901234567890);  // returns false
+
+</code>	
+				<p>*Safe integers are all integers from -(253 - 1) to +(253 - 1).</p>
+				<p>*This is safe: 9007199254740991. This is not safe: 9007199254740992.</p>
+
+
+			</section>
+
+
+
+			<section class="main-section" id="New_Global_Methods">
+				<header>
+					<h1>New Global Methods</h1>
+				</header>
+
+				<p>ES6 also added 2 new global number methods:</p>
+					<ul>
+						<li>isFinite()</li>
+						<li>IsNan</li>	
+					</ul>
+
+				<hr>
+				<h2>The isFinite() Method</h2>
+				<p>The global <b>isFinite()</b> method returns false if the argument is Infinity or NaN.</p>
+				<p>Otherwise it returns true:</p>
+
+<code>
+isFinite(10/0);       // returns false
+
+isFinite(10/1);       // returns true
+
+</code>	
+				<hr>
+				<h2>The isNaN() Method</h2>
+				<p>The global <b>isNan()</b> method returns true if the argument is NaN. Otherwise it returns false:</p>
+<code>
+isNaN("Hello");       // returns true
+
+</code>
+
+
+			</section>
+
+
+
+			<section class="main-section" id="Arrow_functions">
+				<header>
+					<h1>Arrow Functions</h1>
+					<p>Arrow functions allows a short syntax for writing function expressions.</p>
+
+					<p>You don't need the function <b>keyword</b>, the <b>return</b> keyword, and the <b>curly brackets</b>.</p>
+
+<code>
+	// ES5
+	var x = function(x, y) {
+					return x * y;
+	}
+
+	// ES6
+	const x = (x, y) => x * y;
+
+</code>	
+
+					<p>Arrow functions do not have their own <b>this</b>. They are not well suited for defining object methods.</p>
+
+					<p>Arrow functions must be defined before they are used. Using <b>const</b> is safer than using <b>var</b>, because a function expression is a constant value.</p>
+					<p>You can only omit the return keyword and the curly brackets if the function is a single statement.</p>
+					<p>It might be a good habit to keep them:</p>
+
+<code>
+	const x = (x, y) => { return x * y };
+
+</code>	
+
+				</header>
+			</section>
+
+			<section class="main-section" id="Source_Info">
+				<header>
+					<h1>Source Info</h1>
+				</header>
+				<p>Everything from this website is taken from<a href="https://www.w3schools.com/js/js_es6.asp">W3Schools</a>,this page is used for my coding purpose.</p>
+				<p>If you want to view the orginial page you can click the link above. Thank You!</p>
+
+			</section>	
+			
 	</main>	
+   </div>
+
+	</div>	
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
