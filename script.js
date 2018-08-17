@@ -1,49 +1,96 @@
 
 //variables
-
 //<i>
-const button_E = document.getElementById("myBtn");
-
-//<nav>
-const new_E = document.getElementById("link-list");
-
-const newNav = document.getElementById("newNav");
 
 
-function showNav(){
+//<nav>  
 
 
-	alert("show");
-	if(new_E.style.display === "none"){
-			alert("oh yea");
-		}
+//
 
+// var body_E = document.querySelector("body");
+var link_E = document.getElementById("allLink");
+var btn_E = document.getElementById("myBtn");
+var nav_E = document.getElementById("newNav");
+var screenWidth= innerWidth;
+
+
+
+function resizeScreen(){
 	
+	location.reload();	
 		
-	// nav_E.style.justifyContent ="column";	
-	
 }
 
-function hideNav(){
-		alert("hide");
+
+function showHide(){
+
+	if(screenWidth < 650){
+	
+		if(nav_E.style.display != "block"){
+			
+			show();
+
+		
+
+		}
+		else{
+
+			hide();
+
+			
+
+		}
+	
+	}
+}
+
+
+
+
+
+	
+
+	
+
+	
+	
+
+
+
+
+
+	// nav_E.style.justifyContent ="column";	
+function linkClicked(){
+
+	if(screenWidth < 650){
+	
 		hide();
 
-	
+	}
+
 }
-// function show(){
-// 	nav_E.style.display="block";
-// }
-
-
 
 function hide(){
-	alert("second");
-	navNav.style.visibility="hidden";
+	nav_E.style.display="none";
+}
 	
+function show(){
+	nav_E.style.display="block";
 }
 
+window.addEventListener("resize", resizeScreen);
 
-button_E.addEventListener("click", showNav);
+link_E.addEventListener("click", linkClicked);
 
-new_E.addEventListener("click", hideNav);
+btn_E.addEventListener("click", showHide);
+
+
+
+
+
+
+
+
+// new_E.addEventListener("click", hideNav);
 

@@ -1,5 +1,4 @@
 
-
 *{
 	font-family:arial, sans-serif;
 	margin:0;
@@ -7,18 +6,10 @@
 }
 
 
-
-ul{
-
-}
 nav li{
 	list-style-type:none;
 	
 	padding:5px;
-
-
-/*	background-color:blue;*/ 
-
 
 }
 
@@ -28,7 +19,6 @@ a{
 	text-decoration:none;
 
 }
-
 
 
 .container{
@@ -41,22 +31,33 @@ nav{
 	
 	height:100%;
 	float:left;
-	width:28%;
+	width:30%;
 	background-color:#2B7A78;
 	position:fixed;
 	font-size:18px;
+	margin-left:0px; 
+	margin-right:0px;
+/*	overflow:scroll;*/
+	
 
 }
 
+nav #newH{
+	padding-bottom: 10px;
+}
+
+
+nav #newNav{
+	margin:0px;
+	padding-top:10px;
+	
+}
 
 
 
 nav li:hover{
 	color:lightgray;
 	font-size:20px;
-
-
-	
 }
 
 
@@ -70,12 +71,13 @@ nav li:hover{
 #main-doc{
 	
 	float:right;
-	width:72%;
+	width:65%;
 	padding-bottom:20px;
 	background-color: #FEFFF;
 	/*background-color:blue;*/
 	color:gray;
 	
+
 }
 
 section header{
@@ -123,19 +125,6 @@ h3{
 	font-size:20px;
 }
 
-.container nav i{ 
-	
-	display:none;
-
-}
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width:650px){
@@ -143,16 +132,74 @@ h3{
 	.container{
 		width:100%;
 		
-	
 	}
 
 	nav{
 		width:100%;
-		height:90px;
-		position:fixed;
-		
+		height:80px;
+			
+	}
+ 
+	nav #newNav{
+
+		display:none;
+		position:relative;
+		margin-top: 61px;
+		padding-top:10px;
+		background-color:#2B7A78;
+		height:400px;
+		overflow: scroll;
+		font-size:25px;
+		padding-bottom: 100px;
 	}
 
+	nav #newH{
+		width:100%;
+		display:flex;
+		
+
+	}
+
+	nav #newH header{
+		text-align:left;
+		padding-top: 25px;
+	}
+
+	nav i{
+	/*	background-color:#d2dbd8;*/
+		padding:27px;
+
+	}
+
+
+
+	nav #myBtn{
+		width:100%;
+		display:flex;
+		justify-content: flex-end;
+		margin:-67px 1px;
+		font-size:28px;
+		color:white;
+
+		
+		
+
+	}
+
+	nav #myBtn:hover{
+		color:silver;
+	}
+
+	nav #newNav ul a li{
+		padding:0px;
+		margin:0px;
+	}
+
+
+
+
+
+/*
 	nav .newHeader{
 		display:flex;
 		justify-content: center;
@@ -184,33 +231,31 @@ h3{
 	}
 
 	
-	#newNav{
-		visibility: hidden;
-	}
 
-	.theoneiwillbeusing{
-
-		padding:0px 20px;
+	nav .newNav{
 		height:400px;
-		width:300px;
-		background-color:green;
 		overflow-y:auto;
-		
+		padding:0;
+		margin:0;
 	}
-
-	
-
+*/
 
 	#main-doc{
-		width:100%;
-		padding-top:90px;
 		
+		width:100%;
+		margin-top:100px;
+			
 	}
 
+	#main-doc header{
+		margin-top:100px;
+	}
 
+	#main-doc #firstHeaderOnSmallScreen{
+		margin-top:0px;
 
-
-
+	}
+	
 
 	#main-doc p{
 		font-size:18px;
@@ -219,6 +264,7 @@ h3{
 	code{
 		position:static;
 		font-size: 14px;
+
 	}
 
 
@@ -231,20 +277,31 @@ h3{
 
 
 
+@media only screen and (min-width:650px){
+
+	
+		nav #myBtn{
+			display:none;
+		}
 
 
 
+}
 
 
+@media only screen and (min-width:1300px){
 
-@media only screen and (min-width:1100px){
-
-	.container{
-	width:1100px;
+	.container{	
+	max-width:1300px;
+	
 	}
 
-	nav{	
-	width:310px;
+	#navbar{	
+	width:400px;
 	}
+
+
+
+
 
 }

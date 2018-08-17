@@ -24,19 +24,25 @@
 
 
 	-->	
-	<div class="container">
+<div class="container">
 	
 	<nav id="navbar">
 
-			<div class="newHeader">
-			<header class="navHeader"><a class="title_E" href="index.html">ES6 Documentation</a></header>
 
-			<i id="myBtn" class="fa fa-sort-down"></i>
+			<div id="newH">
+			<header class="navHeader"><a class="title_E" href="index.html">ES6 Documentation</a></header>
 			</div>
 
+
+			<div id="myBtn">
+			<i id="showBtn" class="fa fa-navicon"></i>
+			</div>
+
+			
+
+
 			<div id="newNav">
-				<span id="close"></span>
-				<ul id="link-list">
+				<ul id="allLink">
 					<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
 
 					<a class="nav-link" href="#JavaScript_let" rel="internal"><li>JavaScript let</li></a>
@@ -59,22 +65,34 @@
 					<a class="nav-link" href="#Arrow_Functions" rel="internal"><li>Arrow Functions</li></a>
 
 					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
+
+					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
+
+					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
+					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
+					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
+					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
+					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
 				</ul>
 			</div>
 
 	</nav>
-	</div>	
+
+
+
+
+
 
 
 	<main id="main-doc">
-		
 
-			<section class="main-section" id="What_is_ECMAScript_6">
-				<header>What is ECMAScript 6</header>
-			<p>ECMAScript is also known as ES6 and ECMAScript 2015</p>	
-			<p>Some people like to call it Javascript 6.</p>
-			
-			<p>This technical documentation will introduce some of the new features in ES6.</p>
+
+			<section  class="main-section" id="What_is_ECMAScript_6">
+				<header id="firstHeaderOnSmallScreen">What is ECMAScript 6</header>
+				<p>ECMAScript is also known as ES6 and ECMAScript 2015</p>	
+				<p>Some people like to call it Javascript 6.</p>
+				
+				<p>This technical documentation will introduce some of the new features in ES6.</p>
 
 			</section>
 
@@ -126,8 +144,8 @@
 	<code>
 	<h3>Example:</h3>
 	function myFunction(x, y = 10) {
-    // y is 10 if not passed or undefined
-    return x + y;
+	// y is 10 if not passed or undefined
+	return x + y;
 	}
 	myFunction(5); // will return 15
 
@@ -176,7 +194,7 @@
 
 	function myFunction(value, index, array) {
 
-    		return value > 18;
+			return value > 18;
 
 	}
 
@@ -232,23 +250,26 @@
 				<hr>
 				<h3>The Number.isInteger() Method</h3>
 				<p>The <b>Number.isInteger()</b> method returns true if the argument is an integer.</p>
-<code>
-Number.isInteger(10);        
-	// returns true
+	<code>
+	Number.isInteger(10);        
+		// returns true
 
-Number.isInteger(10.5);      
-	// returns false
+	Number.isInteger(10.5);      
+		// returns false
 
-</code>		
-			<h3>The Number.isSafeInteger() Method</h3>
-			<p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
-			<p>The <b>Number.isSafeInteger()</b> method returns true if the argument is a safe integer.</p>
-<code>
-Number.isSafeInteger(10);    // returns true
+	</code>		
+				<h3>The Number.isSafeInteger() Method</h3>
+				<p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
+				<p>The <b>Number.isSafeInteger()</b> method returns true if the argument is a safe integer.</p>
 
-Number.isSafeInteger(12345678901234567890);  // returns false
+	<code>
+	Number.isSafeInteger(10);    
+		// returns true
 
-</code>	
+	Number.isSafeInteger(12345678901234567890);  
+		// returns false
+
+	</code>	
 				<p>*Safe integers are all integers from -(253 - 1) to +(253 - 1).</p>
 				<p>*This is safe: 9007199254740991. This is not safe: 9007199254740992.</p>
 
@@ -271,19 +292,19 @@ Number.isSafeInteger(12345678901234567890);  // returns false
 				<p>The global <b>isFinite()</b> method returns false if the argument is Infinity or NaN.</p>
 				<p>Otherwise it returns true:</p>
 
-<code>
-isFinite(10/0);       // returns false
+	<code>
+	isFinite(10/0);       // returns false
 
-isFinite(10/1);       // returns true
+	isFinite(10/1);       // returns true
 
-</code>	
-				
+	</code>	
+					
 				<h2>The isNaN() Method</h2>
 				<p>The global <b>isNan()</b> method returns true if the argument is NaN. Otherwise it returns false:</p>
-<code>
-isNaN("Hello");       // returns true
+	<code>
+	isNaN("Hello");       // returns true
 
-</code>
+	</code>
 
 
 			</section>
@@ -296,7 +317,7 @@ isNaN("Hello");       // returns true
 
 					<p>You don't need the function <b>keyword</b>, the <b>return</b> keyword, and the <b>curly brackets</b>.</p>
 
-<code>
+	<code>
 	// ES5
 	var x = function(x, y) {
 					return x * y;
@@ -305,7 +326,7 @@ isNaN("Hello");       // returns true
 	// ES6
 	const x = (x, y) => x * y;
 
-</code>	
+	</code>	
 
 					<p>Arrow functions do not have their own <b>this</b>. They are not well suited for defining object methods.</p>
 
@@ -313,12 +334,12 @@ isNaN("Hello");       // returns true
 					<p>You can only omit the return keyword and the curly brackets if the function is a single statement.</p>
 					<p>It might be a good habit to keep them:</p>
 
-<code>
-	const x = (x, y) => { return x * y };
+	<code>
+		const x = (x, y) => { return x * y };
 
-</code>	
+	</code>	
 
-				</header>
+			
 			</section>
 
 			<section class="main-section" id="Source_Info">
@@ -330,7 +351,8 @@ isNaN("Hello");       // returns true
 			
 	</main>	
 
-	</div>	
+</div>	
+
 
 <script src="script.js"></script>	
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
