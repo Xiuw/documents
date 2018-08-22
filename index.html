@@ -9,72 +9,62 @@
 </head>
 <body>
 	<!--
-		- Main element with id="main-doc"
-		- #main-doc with several section with class=main-section
-		- Each .main-section have header element, should have min. of 5 .main-section
-		- Each .main-section should have id corresponds with the text of each header, use underscore instead of space
-		- .main-section should contain at least 10 P element
-		- .main-section should contain at least 5 code element total
-		- .main-section should contain at least 5 li items total not each
-		- nav element with id="navbar" 
-		- nav element should contain one header(describing the topic of the technical documents)
-		- nav bar should contain link(a) with class nav-link, should be one for every element ith the class main-section, nav link should link to the corresponding main-section
-		-On regular sized devices, nav should show on the left side of the screen
-		- Use at least one media query
-
-
+		* Main element with id="main-doc"
+			- With several section with class=main-section
+			- Each .main-section have header element, should have min. of 5 .main-section
+			- Each .main-section should have id corresponds with the text of each header, use underscore instead of space
+			- .main-section should contain at least 10 P element
+			- .main-section should contain at least 5 code element total
+			- .main-section should contain at least 5 li items total not each
+		* nav element with id="navbar" 
+			- nav element should contain one header(describing the topic of the technical documents)
+			- nav bar should contain link(a) with class nav-link, should be one for every element ith the class main-section, nav link should link to the corresponding main-section
+			-On regular sized devices, nav should show on the left side of the screen
+		* Use at least one media query
 	-->	
 <div class="container">
 	
 	<nav id="navbar">
 
 
-			<div id="newH">
-			<header class="navHeader"><a class="title_E" href="index.html">ES6 Documentation</a></header>
+		<div id="newH">
+			<header class="navHeader"><a style="color:#DEF2F1" class="title_E" href="index.html">ES6 Documentation</a></header>
 			</div>
 
 
 			<div id="myBtn">
 			<i id="showBtn" class="fa fa-navicon"></i>
-			</div>
+		</div>
 
 			
 
 
-			<div id="newNav">
-				<ul id="allLink">
-					<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
+		<div id="newNav">
+			<ul id="allLink">
+				<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal"><li>What is ECMAScript 6</li></a>
 
-					<a class="nav-link" href="#JavaScript_let" rel="internal"><li>JavaScript let</li></a>
+				<a class="nav-link" href="#JavaScript_let" rel="internal"><li>JavaScript let</li></a>
 
-					<a class="nav-link" href="#Javascript_const" rel="internal"><li>Javascript const</li></a>
+				<a class="nav-link" href="#Javascript_const" rel="internal"><li>Javascript const</li></a>
 
-					<a class="nav-link" href="#Default_Parameter_Values" rel="internal"><li>Default Parameter Values</li></a>
+				<a class="nav-link" href="#Default_Parameter_Values" rel="internal"><li>Default Parameter Values</li></a>
 
-					<a class="nav-link" href="#Array.find()" rel="internal"><li>Array.find()</li></a>
+				<a class="nav-link" href="#Array.find()" rel="internal"><li>Array.find()</li></a>
 
-					<a class="nav-link" href="#Array.findIndex()" rel="internal"><li>Array.findIndex()</li></a>
+				<a class="nav-link" href="#Array.findIndex()" rel="internal"><li>Array.findIndex()</li></a>
 
-					<a class="nav-link" href="#New_Number_Properties" rel="internal"><li>New Number Properties</li></a>
+				<a class="nav-link" href="#New_Number_Properties" rel="internal"><li>New Number Properties</li></a>
 
-					<a class="nav-link" href="#New_Number_Methods" rel="internal"><li>New Number Methods</li></a>
+				<a class="nav-link" href="#New_Number_Methods" rel="internal"><li>New Number Methods</li></a>
 
 
-					<a class="nav-link" href="#New_Global_Methods" rel="internal"><li>New Global Method</li></a>
+				<a class="nav-link" href="#New_Global_Methods" rel="internal"><li>New Global Methods</li></a>
 
-					<a class="nav-link" href="#Arrow_Functions" rel="internal"><li>Arrow Functions</li></a>
+				<a class="nav-link" href="#Arrow_Functions" rel="internal"><li>Arrow Functions</li></a>
 
-					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
-
-					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
-
-					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
-					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
-					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
-					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
-					<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
-				</ul>
-			</div>
+				<a class="nav-link" href="#Source_Info" rel="internal"><li>Source Info</li></a>
+			</ul>
+		</div>
 
 	</nav>
 
@@ -82,124 +72,154 @@
 
 
 
-
+	
 
 	<main id="main-doc">
+	<a id="anchor">Yo yo </a>
 
+		<section  class="main-section" id="What_is_ECMAScript_6">
+			<header>What is ECMAScript 6</header>
 
-			<section  class="main-section" id="What_is_ECMAScript_6">
-				<header id="firstHeaderOnSmallScreen">What is ECMAScript 6</header>
-				<p>ECMAScript is also known as ES6 and ECMAScript 2015</p>	
+			<div class="section-text">
+				<p>ECMAScript is also known as ES6 and ECMAScript 2015.</p>	
 				<p>Some people like to call it Javascript 6.</p>
 				
 				<p>This technical documentation will introduce some of the new features in ES6.</p>
+			</div>
 
-			</section>
+		</section>
 
-			<section class="main-section" id="JavaScript_let">
-				<header>JavaScript let</header>
-		
+
+		<section class="main-section" id="JavaScript_let">
+			<header>JavaScript let</header>
+			
+			<div class="section-text">
 				<p>The <b>let</b> statement allows you to declare a variable with block scope.</p>
+			</div>
 
-	<code>
-	<h3>Example:</h3>
+			<div class="code-section">
+				<h4>Example:</h4>
+				<code>
 	var x = 10;
-	//here x is 10
+	// here x is 10
 	{
 		let x = 2;
-			//here x is 2
+		// here x is 2
 	}
-	//here x  is 10
+	// here x  is 10
+				</code>	
+			</div>
 
-	</code>	
-					
-			</section>
+				
+		</section>
 
-			<section class="main-section" id="Javascript_const">
-				<header>Javascript const</header>
+		<section class="main-section" id="Javascript_const">
+			<header>Javascript const</header>
+
+			<div class="section-text">
 
 				<p>The <b>const</b> statement allows you to declare a constant (a JavaScript variable with a constant value).</p>
 
 				<p>Constants are similar to let variables, except that the value cannot be changed.</p>
-	<code>
-	<h3>Example:</h3>
+			</div>	
+
+			<div class="code-section">
+				<h4>Example:</h4>
+
+				<code>
 	var x = 10;
-		// Here x is 10
-		{ 
-			const x = 2;
-			// Here x is 2
-		}
-		// Here x is 10
+	// Here x is 10
+	{ 
+		const x = 2;
+		// Here x is 2
+	}
+	// Here x is 10
+				</code>
+			</div>		
 
 
-	</code>	
+	</section>
 
-
-			</section>
-
-			<section class="main-section" id="Default_Parameter_Values">
-				<header>Default Parameter Values</header>
+		<section class="main-section" id="Default_Parameter_Values">
+			<header>Default Parameter Values</header>
+			<div class="section-text">
 				<p>ES6 allows function parameters to have default values.</p>
+			</div>	
 
-	<code>
-	<h3>Example:</h3>
+			<div class="code-section">
+				<h4>Example:</h4>
+
+				<code>
 	function myFunction(x, y = 10) {
 	// y is 10 if not passed or undefined
-	return x + y;
+		return x + y;
 	}
 	myFunction(5); // will return 15
+				</code>
+			</div>				
+		</section>
 
-	</code>			
-			</section>
 
 
+		<section class="main-section" id="Array.find()">
+			<header>Array.find()</header>
 
-			<section class="main-section" id="Array.find()">
-				<header>Array.find()</header>
+			<div class="section-text">
 				<p>The find() method returns the value of the first array element that passes a test function.</p>
 
 				<p>This example finds (returns the value of ) the first element that is larger than 18:</p>
+			</div>
 
-	<code>
-	<h3>Example:</h3>	
+			<div class="code-section">
+				<h4>Example:</h4>
+				<code>
 	var numbers = [4, 9, 16, 25, 29];
 	var first = numbers.find(myFunction);
 
 	function myFunction(value, index, array) {
-    return value > 18;
+			return value > 18;
 	}
+					</code>	
+			</div>
 
-	</code>	
+
+
+			<div class="section-text">
 				<p>Note that the function takes 3 arguments:</p>
 				<ul>
 					<li>The item value</li>
 					<li>The item index</li>
 					<li>The array itself</li>
 				</ul>
+			</div>
 
-			</section>
+		</section>
 
 
 
-			<section class="main-section" id="Array.findIndex()">
-				<header>Array.findIndex()</header>
+		<section class="main-section" id="Array.findIndex()">
+			<header>Array.findIndex()</header>
+
+			<div class="section-text">
 				<p>The findIndex() method returns the index of the first array element that passes a test function.</p>
 				<p>This example finds the index of the first element that is larger than 18:</p>
+			</div>
 
-	<code>
-	<h3>Example:</h3>	
+			<div class="code-section">
+				<h4>Example:</h4>
+
+				<code>
+	
 	var numbers = [4, 9, 16, 25, 29];
-
 	var first = numbers.findIndex(myFunction);
 
 	function myFunction(value, index, array) {
-
-			return value > 18;
+		return value > 18;
 
 	}
-
-	</code>
-
+				</code>
+			</div>	
+			<div class="section-text">
 				<p>Note that the function takes 3 arguments:</p>
 				<ul>
 					<li>The item value</li>
@@ -207,72 +227,94 @@
 					<li>The array itself</li>
 
 				</ul>
+			</div>	
 
-			</section>
+		</section>
 
 
-			<section class="main-section" id="New_Number_Properties">
-				<header>New Number Properties</header>
-				<p>ES6 added the following properties to the Number object:</p>
-				<ul>
-					<li>EPSILON</li>
-					<li>MIN_SAFE_INTEGER</li>
-					<li>MAX_SAFE_INTEGER</li>
-				</ul>
-	<code>
-	<h3>Example:</h3>
+		<section class="main-section" id="New_Number_Properties">
+			<header>New Number Properties</header>
+
+			<div class="section-text">
+			<p>ES6 added the following properties to the Number object:</p>
+			<ul>
+				<li>EPSILON</li>
+				<li>MIN_SAFE_INTEGER</li>
+				<li>MAX_SAFE_INTEGER</li>
+			</ul>
+
+			</div>
+
+			<div class="code-section">
+				<h4>Example:</h4>
+				<code>
 	var x = Number.EPSILON;
-
-	</code>
-		
-	<code>
-	<h3>Example:</h3>	
+				</code>
+			</div>
+			
+			<div class="code-section">
+				<h4>Example:</h4>	
+	
+				<code>
 	var x = Number.MIN_SAFE_INTEGER;
+				</code>	
+			</div>	
 
-	</code>	
-	<code>
-	<h3>Example:</h3>	
+			<div class="code-section">
+				<h4>Example:</h4>
+				<code>
 	var x = Number.MAX_SAFE_INTEGER;
-
-	</code>		
-
-			</section>
+				</code>		
+			</div>
+		</section>
 
 
 
 			<section class="main-section" id="New_Number_Methods">
 				<header>New Number Methods</header>
-				<p>ES6 added 2 new methods to the Number object:</p>
-				<ul>
-					<li>Number.isInteger()</li>
-					<li>Number.isSafeInteger()</li>
-				</ul>
-				<hr>
-				<h3>The Number.isInteger() Method</h3>
-				<p>The <b>Number.isInteger()</b> method returns true if the argument is an integer.</p>
-	<code>
+
+				<div class="section-text">
+					<p>ES6 added 2 new methods to the Number object:</p>
+					<ul>
+						<li>Number.isInteger()</li>
+						<li>Number.isSafeInteger()</li>
+					</ul>
+					
+					<h3>The Number.isInteger() Method</h3>
+					<p>The <b>Number.isInteger()</b> method returns true if the argument is an integer.</p>
+				</div>
+				<div class="code-section">
+					<h4>Example:</h4>
+					<code>
 	Number.isInteger(10);        
 		// returns true
 
 	Number.isInteger(10.5);      
 		// returns false
+					</code>
+				</div>
+					
+				<div class="section-text">			
+					<h3>The Number.isSafeInteger() Method</h3>
+					<p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
+					<p>The <b>Number.isSafeInteger()</b> method returns true if the argument is a safe integer.</p>
+				</div>
 
-	</code>		
-				<h3>The Number.isSafeInteger() Method</h3>
-				<p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
-				<p>The <b>Number.isSafeInteger()</b> method returns true if the argument is a safe integer.</p>
-
-	<code>
+				<div class="code-section">
+					<h4>Example:</h4>
+					<code>
 	Number.isSafeInteger(10);    
 		// returns true
 
 	Number.isSafeInteger(12345678901234567890);  
 		// returns false
-
-	</code>	
-				<p>*Safe integers are all integers from -(253 - 1) to +(253 - 1).</p>
-				<p>*This is safe: 9007199254740991. This is not safe: 9007199254740992.</p>
-
+					</code>
+				</div>
+					
+				<div class="section-text">		
+					<p>*Safe integers are all integers from -(253 - 1) to +(253 - 1).</p>
+					<p>*This is safe: 9007199254740991. This is not safe: 9007199254740992.</p>
+				</div>
 
 			</section>
 
@@ -280,31 +322,42 @@
 
 			<section class="main-section" id="New_Global_Methods">
 				<header>New Global Methods</header>
-
-				<p>ES6 also added 2 new global number methods:</p>
-					<ul>
-						<li>isFinite()</li>
-						<li>IsNan</li>	
-					</ul>
-
 				
-				<h2>The isFinite() Method</h2>
-				<p>The global <b>isFinite()</b> method returns false if the argument is Infinity or NaN.</p>
-				<p>Otherwise it returns true:</p>
+				<div class="section-text">		
+					<p>ES6 also added 2 new global number methods:</p>
+						<ul>
+							<li>isFinite()</li>
+							<li>IsNan</li>	
+						</ul>
 
-	<code>
-	isFinite(10/0);       // returns false
-
-	isFinite(10/1);       // returns true
-
-	</code>	
 					
-				<h2>The isNaN() Method</h2>
-				<p>The global <b>isNan()</b> method returns true if the argument is NaN. Otherwise it returns false:</p>
-	<code>
-	isNaN("Hello");       // returns true
+					<h3>The isFinite() Method</h3>
+					<p>The global <b>isFinite()</b> method returns false if the argument is Infinity or NaN.</p>
+					<p>Otherwise it returns true:</p>
+				</div>
 
-	</code>
+				<div class="code-section">
+					<h4>Example:</h4>
+
+					<code>
+	isFinite(10/0);   // returns false
+
+	isFinite(10/1);   // returns true
+					</code>	
+				</div>
+
+				<div class="section-text">		
+						
+					<h3>The isNaN() Method</h3>
+					<p>The global <b>isNan()</b> method returns true if the argument is NaN. Otherwise it returns false:</p>
+				</div>
+
+				<div class="code-section">
+					<h4>Example:</h4>
+					<code>
+	isNaN("Hello");    // returns true
+					</code>
+				</div>	
 
 
 			</section>
@@ -313,39 +366,55 @@
 
 			<section class="main-section" id="Arrow_Functions">
 				<header>Arrow Functions</header>
-					<p>Arrow functions allows a short syntax for writing function expressions.</p>
 
-					<p>You don't need the function <b>keyword</b>, the <b>return</b> keyword, and the <b>curly brackets</b>.</p>
+					<div class="section-text">
+						<p>Arrow functions allows a short syntax for writing function expressions.</p>
 
-	<code>
+						<p>You don't need the function <b>keyword</b>, the <b>return</b> keyword, and the <b>curly brackets</b>.</p>
+					</div>
+
+					<div class="code-section">
+						<h4>Example:</h4>
+
+					<code>
 	// ES5
 	var x = function(x, y) {
-					return x * y;
+		return x * y;
 	}
 
 	// ES6
 	const x = (x, y) => x * y;
+						</code>	
+					</div>
 
-	</code>	
+					<div class="section-text">
 
-					<p>Arrow functions do not have their own <b>this</b>. They are not well suited for defining object methods.</p>
+						<p>Arrow functions do not have their own <b>this</b>. They are not well suited for defining object methods.</p>
 
-					<p>Arrow functions must be defined before they are used. Using <b>const</b> is safer than using <b>var</b>, because a function expression is a constant value.</p>
-					<p>You can only omit the return keyword and the curly brackets if the function is a single statement.</p>
-					<p>It might be a good habit to keep them:</p>
+						<p>Arrow functions must be defined before they are used. Using <b>const</b> is safer than using <b>var</b>, because a function expression is a constant value.</p>
+						<p>You can only omit the return keyword and the curly brackets if the function is a single statement.</p>
+						<p>It might be a good habit to keep them:</p>
 
-	<code>
-		const x = (x, y) => { return x * y };
+					</div>
 
-	</code>	
+					<div class="code-section">
+						<h4>Example:</h4>
 
-			
+						<code>
+	const x = (x, y) => { return x * y };
+						</code>	
+
+
+					</div>
 			</section>
 
 			<section class="main-section" id="Source_Info">
 				<header>Source Info</header>
-				<p>Everything from this website is taken from<a href="https://www.w3schools.com/js/js_es6.asp">W3Schools</a>,this page is used for my coding purpose.</p>
-				<p>If you want to view the orginial page you can click the link above. Thank You!</p>
+
+				<div class="section-text">
+					<p>Everything from this website is taken from <a href="https://www.w3schools.com/js/js_es6.asp" style="color:#2B7A78; text-decoration:none;">W3Schools</a>,this page is used for my coding purpose.</p>
+					<p>If you want to view the orginial page you can click the link above. Thank You!</p>
+				</div>
 
 			</section>	
 			
@@ -354,7 +423,7 @@
 </div>	
 
 
-<script src="script.js"></script>	
+<script src="myScript.js"></script>	
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

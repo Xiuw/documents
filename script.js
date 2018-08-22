@@ -1,22 +1,15 @@
-
-//variables
-//<i>
-
-
-//<nav>  
-
-
-//
-
-// var body_E = document.querySelector("body");
 var link_E = document.getElementById("allLink");
 var btn_E = document.getElementById("myBtn");
 var nav_E = document.getElementById("newNav");
+var navbar_E = document.getElementById("navbar");
+
+
 var screenWidth= innerWidth;
 
 
 
 function resizeScreen(){
+
 	
 	location.reload();	
 		
@@ -26,37 +19,18 @@ function resizeScreen(){
 function showHide(){
 
 	if(screenWidth < 650){
-	
 		if(nav_E.style.display != "block"){
-			
 			show();
-
-		
 
 		}
 		else{
 
 			hide();
 
-			
-
 		}
 	
 	}
 }
-
-
-
-
-
-	
-
-	
-
-	
-	
-
-
 
 
 
@@ -66,6 +40,7 @@ function linkClicked(){
 	if(screenWidth < 650){
 	
 		hide();
+	
 
 	}
 
@@ -73,10 +48,13 @@ function linkClicked(){
 
 function hide(){
 	nav_E.style.display="none";
+	btn_E.style.color ="#DEF2F1";
 }
 	
 function show(){
 	nav_E.style.display="block";
+	btn_E.style.color ="white";
+	
 }
 
 window.addEventListener("resize", resizeScreen);
