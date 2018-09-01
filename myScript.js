@@ -1,9 +1,12 @@
 
 //Declare Variables
-const link_E = document.getElementById("allLink");
-const btn_E = document.getElementById("myBtn");
-const nav_E = document.getElementById("newNav");
+const link_E = document.querySelector("#allLink");
+const btn_E = document.querySelector("#myBtn");
+const nav_E = document.querySelector("#newNav");
 const screenWidth= innerWidth;
+const menu_E = document.querySelector("#navbar");
+let position = 0;
+
 
 
 //functions
@@ -35,10 +38,27 @@ const linkClicked = () => {
 
 
 
+const showHideMenu = () => {
+	if(screenWidth < 650){
 
+		if(position < window.pageYOffset) {
+	    //console.log('down')
+	    menu_E.classList.add('hideNav');
+	    position = window.pageYOffset;
+	  	} else {
+	    //console.log('up');
+	    menu_E.classList = 'nav-bar'
+	    position = window.pageYOffset;
+	  	}
+
+	}
+}
 
 
 //Event Listener
+
+window.addEventListener("scroll", showHideMenu);
+
 window.addEventListener("resize", resizeScreen);
 link_E.addEventListener("click", linkClicked);
 btn_E.addEventListener("click", showHide);
