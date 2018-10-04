@@ -42,12 +42,12 @@ const showHideMenu = () => {
 	if(screenWidth < 650){
 
 		if(position < window.pageYOffset) {
-	    //console.log('down')
 	    menu_E.classList.add('hideNav');
 	    position = window.pageYOffset;
-	  	} else {
-	    //console.log('up');
-	    menu_E.classList = 'nav-bar'
+	  	} 
+
+	  	else {
+	    menu_E.classList = 'nav-bar';
 	    position = window.pageYOffset;
 	  	}
 
