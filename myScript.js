@@ -56,9 +56,7 @@ const showHideMenu = () => {
 
 
 //Event Listener
-
 window.addEventListener("scroll", showHideMenu);
-
 window.addEventListener("resize", resizeScreen);
 link_E.addEventListener("click", linkClicked);
 btn_E.addEventListener("click", showHide);
