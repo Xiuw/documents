@@ -16,6 +16,7 @@ nav{
 	margin-left:0px; 
 	margin-right:0px;
 	overflow-y:scroll;
+	background-color:#DEF2F1;
 }
 
 nav #newH{
@@ -28,11 +29,9 @@ nav #newH{
 	
 }
 
-nav #newNav{
-	
-	background-color:#DEF2F1;	
-	
-}
+/*nav #newNav{
+	background-color:#DEF2F1;		
+}*/
 
 nav a{
 	color:#2B7A78;
@@ -138,7 +137,9 @@ footer{
 }
 
 
-
+/*************
+For smaller screen
+*************/
 @media only screen and (max-width:650px){
 	.container{
 		width:100%;	
@@ -183,9 +184,6 @@ footer{
 		background-color:#2B7A78;
 		font-size:26px;
 		position:-webkit-sticky;	
-
-		
-
 	}
 
 	nav #newH header{
